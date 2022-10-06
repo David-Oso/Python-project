@@ -9,5 +9,10 @@ if __name__ == '__main__':
         eight = one * 8
         nine = one * 9
         ten = one * 10
-        print(one, " ", two, " ", three, " ", four, " ", five, " ", six, " ", seven, " ", eight, " ", nine, " ", ten,
-              " ")
+        print(one, " ", two, " ", three, " ", four, " ", five, " ", six, " ", seven, " ", eight, " ", nine, " ", ten)
+#
+#
+#
+#
+#
+#
