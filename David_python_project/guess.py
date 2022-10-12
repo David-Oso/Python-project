@@ -1,17 +1,19 @@
-if __name__ == '__main__':
-    guess = int(input("Guess a number: "))
+import random
+# random.seed(104)
+number = random.randint(1, 10)
+counter = 0
 
-    number = 45
-
-    while 0 <= guess or guess <= 100:
-        if guess < number:
-            print("Too low!!!\nRe-run the app and try again later. Thank you.")
-
-            # It gives me infinite loop without including the break
-            break
-        elif guess > number:
-            print("Too high!!!\nRe-run the app and try again later. Thank you.")
-            break
-        elif guess == number:
-            print("Correct guess\nYour precision was right, keep it up\nYou can also run the app again.")
-            break
+while counter <= 3:
+    guess = int(input("Guess a number between 1 ans 10: "))
+    if guess == number:
+        print("You guessed right")
+        break
+    elif guess > number:
+        print("Number too high")
+    elif guess < number:
+        print("Number too low")
+    else:
+        pass
+    counter += 1
+else:
+    print("Better luck next time, you tried guessing ordinary", number)
